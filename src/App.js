@@ -10,6 +10,7 @@ import Error from './Error';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import Header from './components/Header'
+import Footer from './components/Footer';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
       <Router>
+        <GlobalStyle />
         <Header />
         <Routes>
           <Route  path='/' element={<Home />} />
@@ -50,6 +52,7 @@ function App() {
           <Route  path='/cart' element={<Cart />} />
           <Route  path='*' element={<Error />} />
         </Routes>
+        <Footer />
       </Router>
       </ThemeProvider>
     </div>

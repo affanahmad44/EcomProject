@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { TbTruckDelivery } from "react-icons/tb";
-import { MdSecurity } from "react-icons/md";
 import { GiReceiveMoney } from "react-icons/gi";
+import { MdSecurity } from "react-icons/md";
 import { RiSecurePaymentLine } from "react-icons/ri";
+import { TbTruckDelivery } from "react-icons/tb";
+import styled from "styled-components";
 
 const Services = () => {
   return (
@@ -11,32 +11,33 @@ const Services = () => {
         <div className="grid grid-three-column">
           <div className="services-1">
             <div>
-              <TbTruckDelivery className="icon" />
-              <h3>Super Fast and Free Delivery</h3>
+              <TbTruckDelivery  className="icon"/>
+              <h3>Super Fast and Free Delivery</h3> 
             </div>
           </div>
 
           <div className="services-2">
             <div className="services-colum-2">
               <div>
-                <MdSecurity className="icon" />
+                <MdSecurity />
                 <h3>Non-contact Shipping</h3>
               </div>
             </div>
             <div className="services-colum-2">
               <div>
-                <GiReceiveMoney className="icon" />
-                <h3>Money-back Guaranteed</h3>
+                <GiReceiveMoney />
+                <h3>Money-back Guarenteed</h3>
               </div>
             </div>
           </div>
 
           <div className="services-3">
             <div>
-              <RiSecurePaymentLine className="icon" />
+              <RiSecurePaymentLine />
               <h3>Super Secure Payment System</h3>
             </div>
           </div>
+
         </div>
       </div>
     </Wrapper>
@@ -105,4 +106,6 @@ const Wrapper = styled.section`
     color: #5138ee;
   }
 `;
+
+
 export default Services;
