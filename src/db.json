@@ -1,0 +1,44 @@
+{
+    "items": [
+      {
+        "id": "44store",
+        "name": "wired controller",
+        "company": "cosmicbyte",
+        "price": "1500",
+        "colors": [
+          "white",
+          "black"
+        ],
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQb0BMfBSUNQbCIzT2Eyg3C0kx8PKMnt-kwg5Wdbhm3nWrxzg79Xxjyx597lvOTFiZmbzgi3SSFJ7i3JbVL5XFRBOQ_WFhvObEZT7LDlubEidngL72i0QGr",
+        "category": "controllers",
+        "featured": true
+      },
+      {
+        "id": "44store",
+        "name": "wireless controller",
+        "company": "cosmicbyte",
+        "price": "2000",
+        "colors": [
+          "white",
+          "black"
+        ],
+        "image": "https://cdns3.thecosmicbyte.com/wp-content/uploads/0-653a9291e67b1.jpg",
+        "category": "controllers",
+        "featured": true
+      },
+      {
+        "id": "44store",
+        "name": "PS5",
+        "company": "sony",
+        "price": "50,000",
+        "colors": [
+          "white",
+          "black"
+        ],
+        "image": "https://images.immediate.co.uk/production/volatile/sites/3/2020/08/playstation-5-77d37a0.jpg?quality=90&resize=980,654",
+        "category": "playstation",
+        "featured": true
+      }
+    ]
+  }
+  

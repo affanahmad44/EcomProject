@@ -5,6 +5,7 @@ import { Button } from "../styles/Button";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+
   return (
     <>
       <Wrapper>
@@ -25,7 +26,7 @@ const Footer = () => {
         {/* footer section */}
 
         <footer>
-          <div className="container grid grid-four-column">
+          <div className="container">
             <div className="footer-about">
               <h3>Thapa Technical</h3>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
@@ -50,7 +51,8 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">   
                     <FaYoutube className="icons" />
                   </a>
                 </div>
@@ -84,6 +86,23 @@ const Wrapper = styled.section`
   .iSIFGq {
     margin: 0;
   }
+  
+  .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer-about,
+.footer-subscribe,
+.footer-social,
+.footer-contact {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
 
   .contact-short {
     max-width: 60vw;
