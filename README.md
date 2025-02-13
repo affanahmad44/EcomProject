@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+⚠️ **Important:** Before running this project, open [this link](https://api.pujakaitem.com/api/products) to activate the API.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
