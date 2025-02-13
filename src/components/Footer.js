@@ -5,7 +5,6 @@ import { Button } from "../styles/Button";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-
   return (
     <>
       <Wrapper>
@@ -26,10 +25,10 @@ const Footer = () => {
         {/* footer section */}
 
         <footer>
-          <div className="container">
+          <div className="container grid grid-four-column">
             <div className="footer-about">
-              <h3>Thapa Technical</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+              <h3>44's Store</h3>
+              <p>East or west, 44's Store is best. </p>
             </div>
             <div className="footer-subscribe">
               <h3>Subscribe to get important updates</h3>
@@ -49,12 +48,7 @@ const Footer = () => {
                   <FaInstagram className="icons" />
                 </div>
                 <div>
-                  <a
-                    href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank"
-                    rel="noopener noreferrer">   
-                    <FaYoutube className="icons" />
-                  </a>
+                  <FaYoutube className="icons" />  
                 </div>
               </div>
             </div>
@@ -68,7 +62,7 @@ const Footer = () => {
             <hr />
             <div className="container grid grid-two-column ">
               <p>
-                @{new Date().getFullYear()} ThapaTechnical. All Rights Reserved
+                @{new Date().getFullYear()} 44's Store. All Rights Reserved
               </p>
               <div>
                 <p>PRIVACY POLICY</p>
@@ -86,23 +80,6 @@ const Wrapper = styled.section`
   .iSIFGq {
     margin: 0;
   }
-  
-  .container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
-
-.footer-about,
-.footer-subscribe,
-.footer-social,
-.footer-contact {
-  padding: 10px;
-  background-color: #f5f5f5;
-  border-radius: 8px;
-}
-
 
   .contact-short {
     max-width: 60vw;

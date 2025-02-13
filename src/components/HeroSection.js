@@ -1,40 +1,39 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Button } from '../styles/Button'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+import { Button } from "../styles/Button";
 
-const HeroSection = ({myData}) => {
-    const {name} = myData;
+const HeroSection = ({ myData }) => {
+  const { name } = myData;
+
   return (
-   <Wrapper>
-    <div className='container'>
-        <div className='gird gird-two-column'>
-            <div className='hero-section-data'>
-                <p className='intro-data'>Welcome to </p>
-                <h1>{name}</h1>
-                <p>
-                    welcome to my store ...here u will get everything at geninue prices...
-                </p>
-                <NavLink>
-                    <Button>Shop Now</Button>
-                </NavLink>
-             </div>
-
-             {/* Our Homepage Image */}
-             <div className='hero-section-image'>
-                <figure>
-                    <img src='./images/photo1.avif'
-                     alt='no-image'
-                     className='hero-section-photo'/>
-                </figure>
-             </div>
-
+    <Wrapper>
+      <div className="container">
+        <div className="grid grid-two-column">
+          <div className="hero-section-data">
+            <p className="intro-data">Welcome to </p>
+            <h1> {name} </h1>
+            <h3>
+              Welcome to my store.Here you will get everything at discounted prices.Happy Shopping!
+            </h3>
+            <NavLink>
+              <Button>show now</Button>
+            </NavLink>
+          </div>
+          {/* our homepage image  */}
+          <div className="hero-section-image">
+            <figure>
+              <img
+                src="./images/photo1.avif"
+                alt="hero-section-photo"
+                className="img-style"
+              />
+            </figure>
+          </div>
         </div>
-
-    </div>
-   </Wrapper>
-)
-}
+      </div>
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.section`
   padding: 12rem 0;
@@ -100,6 +99,6 @@ const Wrapper = styled.section`
       background-color: rgba(81, 56, 238, 0.4);
     }
   }
-`; 
+`;
 
-export default HeroSection
+export default HeroSection;
